@@ -14,7 +14,7 @@
 }
 .hoverMe {
   grid-area: hover;
-  background-color: red;
+  background-color: gray;
   color: white;
   width: 150px;
   text-align: center;

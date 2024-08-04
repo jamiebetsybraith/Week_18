@@ -1,6 +1,7 @@
 .bounceMe {
   /* Add the animation bounceArrow here */
 
+
 }
 .spinMe {
   /* Add the animation for spin on the line below  */
@@ -18,6 +19,7 @@
   height: 20px;
   border-radius: 5px;
   /* add the animation name here for the progress bar */
+
 }
 .movingBox {
   width: 50px;

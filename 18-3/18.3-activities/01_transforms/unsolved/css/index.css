@@ -17,6 +17,7 @@ body {
 }
 .rotate img {
 /* Write your rotate transform here */
+
 }
 .scale {
   grid-area: scale;
@@ -43,6 +44,7 @@ body {
   height: 100px;
   background-color: blue;
   /* Write the translate transform here */
+
 }
 
 .gridChild {
