@@ -1,0 +1,126 @@
+/* parent container for grid */
+.grid {
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "square eight-pointed-star skew"
+    "burst heart diamond"
+    ;
+    display: grid;
+    row-gap: 60px;
+    column-gap: 20px;
+    justify-items: center;
+    margin: 100px;
+}
+
+/* square */
+.square {
+    display: grid;
+    grid-area: square;
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+}
+
+
+/* 8 pointed star */
+.eight-pointed-star {
+    display: grid;
+    grid-area: eight-pointed-star;
+    height: 100px;
+    width: 100px;
+}
+#eightVert {
+    height: 100px;
+    width: 100px;
+    background-color: chartreuse;
+    transform: rotate(45deg);
+}
+#eightHorz {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color:chartreuse;
+
+}
+
+/* skew */
+.skew {
+    display: grid;
+    grid-area: skew;
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+    transform: skewX(20deg);
+    border-radius: 0px 10px 0px 10px;
+}
+
+/* burst */
+.burst {
+    display: grid;
+    grid-area: burst;
+    height: 100px;
+    width: 100px;
+}
+#burst1 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color:fuchsia;
+    transform: skewX(20deg) rotate(0deg);
+}
+#burst2 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color:fuchsia;
+    transform: skewX(20deg) rotate(22.5deg);
+}
+#burst3 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color:fuchsia;
+    transform: skewX(20deg) rotate(45deg);
+}
+#burst4 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color:fuchsia;
+    transform: skewX(20deg) rotate(67.5deg);
+}
+
+/* heart */
+.heart {
+    grid-area: heart;
+    height: 100px;
+    width: 100px;
+}
+#heartLeft {
+    position: absolute;
+    margin-left: 34px;
+    height: 100px;
+    width: 60px;
+    background-color:red;
+    border-radius: 50% 45% 0px 0px;
+    transform: rotate(45deg);
+}
+#heartRight {
+    position: absolute;
+    margin-left: 5px;
+    height: 100px;
+    width: 60px;
+    background-color:red;
+    border-radius: 45% 50% 0px 0px;
+    transform: rotate(-45deg);
+}
+
+/* diamond */
+.diamond {
+    grid-area: diamond;
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    transform: rotate(45deg);
+}
